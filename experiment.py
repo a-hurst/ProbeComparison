@@ -297,7 +297,7 @@ class ProbeComparison(klibs.Experiment):
             else:
                 # If we can't guarantee that there'll be at least one upcoming non-target
                 # trial, don't recycle/reshuffle in order to avoid potential infinite loop
-                self.is_target == False
+                self.is_target = False
         
         # Choose letter for current trial, based on whether it's a target trial or not
 
