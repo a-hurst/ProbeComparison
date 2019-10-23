@@ -64,7 +64,7 @@ class ProbeComparison(klibs.Experiment):
 
         self.probe_trials = []
         noprobe_span = [False] * P.noprobe_span
-        probe_span = [True] + [False] * P.probe_span
+        probe_span = [True] + [False] * (P.probe_span - 1)
         while len(self.probe_trials) < (P.trials_per_block * P.blocks_per_experiment):
             random.shuffle(probe_span)
             self.probe_trials += noprobe_span + probe_span
