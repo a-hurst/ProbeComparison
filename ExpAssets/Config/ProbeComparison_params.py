@@ -19,7 +19,7 @@ eye_tracking = False
 #########################################
 # Environment Aesthetic Defaults
 #########################################
-default_fill_color = (96, 96, 96, 255)
+default_fill_color = (65, 65, 65, 255)
 default_color = (255, 255, 255, 255)
 default_font_size = 0.6
 default_font_unit = 'deg'
@@ -39,21 +39,21 @@ saccadic_motion_threshold = 0.15
 # Experiment Structure
 #########################################
 multi_session_project = False
-trials_per_block = 270
-blocks_per_experiment = 2
+trials_per_block = 9
+blocks_per_experiment = 132
 table_defaults = {}
 conditions = [ # The study to use the probe style from
     'a', # Christoff et al. (2009) [Likert-type, 1-7]
-    'b', # Killingsworth et al. (2010) [4-AFC, mood-focused]
+    'b', # McVay et al. (2009) [7-AFC, content-focused]
     'c', # Mason et al. (2007) [2-AFC]
-    'd', # McVay et al. (2009) [7-AFC, content-focused]
+    'd', # Killingsworth et al. (2010) [4-AFC, mood-focused]
     'e'  # Mrazek et al. (2013) [Likert-type, 1-5]
 ]
 condition_map = {
     'a': 'christoff2009',
-    'b': 'killingsworth2010',
+    'b': 'mcvay2009',
     'c': 'mason2007',
-    'd': 'mcvay2009',
+    'd': 'killingsworth2010',
     'e': 'mrazek2013'
 }
 default_condition = 'c'
@@ -78,10 +78,10 @@ datafile_ext = ".txt"
 #########################################
 # PROJECT-SPECIFIC VARS
 #########################################
-target_duration = 500 # ms
-trial_duration = 2500 # ms
-set_size = 10 # number of unique letters used in task
+stim_duration = 250 # ms
+trial_duration = 1150 # ms
+target = 3
 
 # trials_per_block should be a multiple of probe_span + noprobe_span
-probe_span = 22 
-noprobe_span = 8 # minimum trials between probes
+probe_span = 48 # 48 now
+noprobe_span = 18 # minimum trials between probes

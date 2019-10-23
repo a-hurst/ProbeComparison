@@ -51,18 +51,15 @@ CREATE TABLE participants (
 );
 
 CREATE TABLE trials (
-	id integer primary key autoincrement not null,
-	participant_id integer not null references participants(id),
-	block_num integer not null,
-	trial_num integer not null,
-	practice boolean not null,
-	probe_type text not null,
-	first_nback integer not null,
-	nback integer not null,
-	target_trial boolean not null,
-	resp text not null,
-	accuracy text not null,
-	rt text not null,
+  id integer primary key autoincrement not null,
+  participant_id integer not null references participants(id),
+  block_num integer not null,
+  trial_num integer not null,
+  digit text not null,
+  target_digit text not null,
+  response text not null,
+  rt text not null,
+  accuracy text not null,
 	probe_resp text not null,
 	probe_rt text not null
 );

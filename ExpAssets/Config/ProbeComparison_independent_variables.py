@@ -8,7 +8,4 @@ ProbeComparison_ind_vars = IndependentVariableSet()
 
 # Define project variables and variable types
 
-## Factors ##
-# 'is_target': whether the trial is a n-back target trial or not
-
-ProbeComparison_ind_vars.add_variable('is_target', bool, [True, (False, 5)])
+ProbeComparison_ind_vars.add_variable('number', int, [1, 2, 3, 4, 5, 6, 7, 8, 9])
