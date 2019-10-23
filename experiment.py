@@ -320,9 +320,12 @@ class ProbeComparison(klibs.Experiment):
             probe_resp, probe_rt = ('NA', 'NA')
 
         return {
+            "probe_type": self.probe_condition,
+            "practicing": P.practicing,
             "block_num": P.block_number,
             "trial_num": P.trial_number,
             "digit": self.number,
+            "digit_size": self.num_size,
             "target_digit": P.target,
             "response": resp,
             "rt": rt,

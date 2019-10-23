@@ -1,8 +1,8 @@
 # ProbeComparison
 
-ProbeComparison is the experiment program for a study exploring how the phrasing and format of different mind-wandering probes affect the measurement of mind-wandering rates and effects. This study compares rates of mind-wandering in an N-Back task across 5 different different types of probes (between subjects, see table below) and between difficulty levels (within subjects, one-back vs. two-back).
+ProbeComparison is the experiment program for a study exploring how the phrasing and format of different mind-wandering probes affect the measurement of mind-wandering rates and effects. This study compares overall rates of mind-wandering and magnitudes of time-on-task effects in a SART task across different different types of probes (between subjects, see table below).
 
-![N-Back with Mason et al. (2007) probe](probecompare.gif)
+![SART with Mason et al. (2007) probe](probecompare.gif)
 
 The probe formats and phrasings are taken from the top-5 cited papers studying mind-wandering with probes from 2003 to 2018. The ultimate aim of this study is to investigate the differences in how mind-wandering is measured between common probe types, and assess whether any of these differences are large enough for methodological concern.
 
@@ -39,12 +39,12 @@ This experiment program allows you to specify which of the five probe types to u
 Condition Flag | Data Label | Probe Format
 --- | --- | ---
 `a` | `christoff2009` | [Christoff, Gordon, Smallwood, Smith, & Schooler (2009)](https://doi.org/10.1073/pnas.0900234106)
-`b` | `killingsworth2010` | [Killingsworth & Gilbert (2010)](https://doi.org/10.1126/science.1192439)
+`b` | `mcvay2009` | [McVay & Kane (2009)](https://doi.org/10.1037/a0014104)
 `c` | `mason2007` | [Mason et al. (2007)](https://doi.org/10.1126/science.1131295)
-`d` | `mcvay2009` | [McVay & Kane (2009)](https://doi.org/10.1037/a0014104)
+`d` | `killingsworth2010` | [Killingsworth & Gilbert (2010)](https://doi.org/10.1126/science.1192439)
 `e` | `mrazek2013` | [Mrazek, Franklin, Phillips, Baird, & Schooler (2013)](https://doi.org/10.1177/0956797612459659)
 
-For example, to run the experiment using the probe format from McVay & Kane (2009), you would launch the experiment using `klibs run 24 --condition d`.
+For example, to run the experiment using the probe format from McVay & Kane (2009), you would launch the experiment using `klibs run 24 --condition b`.
 
 
 ### Exporting Data
